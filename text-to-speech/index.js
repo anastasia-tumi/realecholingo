@@ -18,7 +18,7 @@ app.listen(3000, () => {
 
 app.post('/synthesize', async (req, res) => {
     try {
-        const { text } = "hello"; // The text to be converted to speech
+        const { text } = req.body; // The text to be converted to speech
 
         // Set up the request for the API
         const request = {
@@ -38,7 +38,3 @@ app.post('/synthesize', async (req, res) => {
         res.status(500).send('Error converting text to speech');
     }
 });
-
-//comment
-
-/Users/anastasia/EchoLingo-1/EchoLingo/text-to-speech/index.js
