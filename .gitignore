@@ -1,1 +1,8 @@
-text-to-speech/echolingo-453116-56239aef94de.json
+# Supabase
+.branches
+.temp
+
+# dotenvx
+.env.keys
+.env.local
+.env.*.local
